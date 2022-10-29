@@ -37,7 +37,7 @@ button{
     margin-bottom: -9%;;
     z-index: -100;}
 
-    .first-page__background_wrapper {
+.first-page__background_wrapper {
         display: flex;
         justify-content: center;
         align-content: center;
@@ -64,7 +64,6 @@ button{
         line-height: 150%;
         /* border: 2px solid red; */
     }
-   
     .first-page__button {
         display: flex;
         z-index: 300;
@@ -122,15 +121,15 @@ button{
         background-color: #d56c2b;
         cursor: pointer;
     }
-   a.first-page__button:hover {
+    a.first-page__button:hover {
         transition: .5s linear;
         color: green;
         cursor: pointer;
         background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
-      }
-      a.first-page__button:active {
+    }
+    a.first-page__button:active {
         top: 1px;
-      }
+    }
 @media screen and (max-width: 480px) {
     .first-page__background_wrapper, .first-page__text_title{
         display: none;
