@@ -1,0 +1,15 @@
+.form-container__heading {
+    padding: 100px;
+    color: $heading;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    background-image: url("/NYTrees/assets/images/x-mas-tree.jpg");
+}
+
+@media screen and (max-width: $tablet-width) {
+    .form-container__heading {
+        padding: 80px 20px;
+        font-size: 50px;
+    }
+}

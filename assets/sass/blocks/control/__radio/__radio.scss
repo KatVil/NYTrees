@@ -1,0 +1,9 @@
+.control__radio {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .control__radio {
+        margin-right: 5px;
+    }
+}

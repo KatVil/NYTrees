@@ -1,0 +1,13 @@
+.form__contact-input {
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid $text;
+
+    &:focus {
+        outline: none;
+    }
+
+    &_message {
+        border: 1px solid $text;
+    }
+}
