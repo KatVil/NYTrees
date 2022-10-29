@@ -14,7 +14,111 @@
 </head>
 
 <body>
+    <section class="form-container">
+        <h2 class="form-container__heading form-container__heading_recycle">Оставить заявку на переработку</h2>
+        <p class="form-container__text">Сдавая елку на переработку вы помагаете поддерживать различные волонтерские
+            инициативы</p>
+        <form action="#" class="form">
+            <div class="form-container__control">
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете дерево, которое хотите сдать:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="xmasTree">
+                                <input class="control__radio" type="radio" id="xmasTree" checked>
+                                <span class="control__label">Ель</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="pine">
+                                <input class="control__radio" id="pine" type="radio">
+                                <span class="control__label">Сосна</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="fir">
+                                <input class="control__radio" id="fir" type="radio">
+                                <span class="control__label">Пихта</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете высоту дерева:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="small">
+                                <input class="control__radio" type="radio" id="small" checked>
+                                <span class="control__label">Менее 1м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="medium">
+                                <input class="control__radio" id="medium" type="radio">
+                                <span class="control__label">От 1м до 1,5м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="mediumLarge">
+                                <input class="control__radio" id="mediumLarge" type="radio">
+                                <span class="control__label">От 1,5 до 2м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="large">
+                                <input class="control__radio" id="large" type="radio">
+                                <span class="control__label">Более 2м</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете, в какую организацию мы перечислим деньги:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="xmasTree">
+                                <input class="control__radio" type="checkbox" id="xmasTree" checked>
+                                <span class="control__label">Ночлежка</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="pine">
+                                <input class="control__radio" id="pine" type="checkbox">
+                                <span class="control__label">Дом с маяком</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="fir">
+                                <input class="control__radio" id="fir" type="checkbox">
+                                <span class="control__label">Подари жизнь</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <fieldset class="form__filter-group form__filter-group_contact">
+                <legend class="form__title">Введите свои данные:</legend>
+                <label for="formName" class="form__contact-label" id="addName">Имя</label>
+                <input class="form__contact-input" type="text" id="formName" placeholder="Имя"
+                    onfocus="this.placeholder = ''" required>
+                <label for="formMail" class="form__contact-label" id="addMail">Email</label>
+                <input class="form__contact-input" type="text" id="formName" placeholder="Имя"
+                    onfocus="this.placeholder = ''" required>
+                <label for="formMail" class="form__contact-label" id="addAddress">Адрес</label>
+                <input class="form__contact-input" type="address" id="formAddress" placeholder="Адрес"
+                    onfocus="this.placeholder = ''" required>
+                <label for="formMessage" class="form__contact-label" id="addMessage">Дополнительное
+                    сообщение</label>
+                <textarea class="form__contact-input form__contact-input_message" name="inputMessage" id="formMessage"
+                    cols="30" rows="15" placeholder="Сообщение" onfocus="this.placeholder = ''"></textarea>
+                <div class="button-container">
+                    <button class="button button-container__button">Отправить заявку!</button>
 
+                </div>
+            </fieldset>
+
+        </form>
+        <section class="form-container__heading"></section>
 </body>
 
 </html>
