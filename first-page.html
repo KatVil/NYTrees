@@ -23,7 +23,51 @@
 </head>
 <body>
     <div class="wrapper">
-        <header></header>
+        <header class="header">
+            <img class="img-logo" src="./assets/images/logo.svg" alt="logo" width="70px" height="70px">
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+    
+                <nav class="nav" id="nav">
+                    <ul>
+                        <li><a href="#">О НАС</a></li>
+                        <li><a href="gallery.html">КУПИ</a></li>
+                        <li><a href="recycle.html">ОТДАЙ</a></li>
+                        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+    
+            <nav class="menu">
+    
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">О НАС</a>
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="gallery.html">КУПИ</a>
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="recycle.html">ОТДАЙ</a>
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="contacts.html">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+        </header>
         <main>
             <section class="first-page">
                 <div class="first-page__background_wrapper">
@@ -47,9 +91,36 @@
 
                 </ul>                                  
             </section>
-
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <nav class="social">
+                <ul class="social__list">
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="https://facebook.com/">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="https://twitter.com/">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="https://ru.linkedin.com/">
+                            <ion-icon name="logo-linkedin">
+                                <ion-icon>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="http://instagram.com/">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copiright">&copy;2022</p>
+            </div>
+        </footer>
         </div>
 </body>
 </html>
