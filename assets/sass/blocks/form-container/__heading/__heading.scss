@@ -5,14 +5,14 @@
     font-weight: bold;
     font-size: 60px;
     text-align: center;
-    background-image: url('./NYTrees/assets/images/x-mas-lights.jpg');
     background-color: green;
+    background-image: url('/NYTrees/assets/images/x-mas-lights.jpg');
 }
 
 .form-container__heading_recycle {
-        background-image: url('./NYTrees/assets/images/background-img2.jpg');
         background-color: green;
         background-repeat: no-repeat;
+        background-image: url('/NYTrees/assets/images/background-img2.jpg');
     }
 
 @media screen and (max-width: $tablet-width) {
