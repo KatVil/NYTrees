@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,QAAQ;EACJ,OAAO,EAAE,IAAI;;;AAEjB,WAAW;EACP,OAAO,EAAE,IAAI;;;AAEjB,+BAA+B;EAC3B,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,KAAK;;;AAEhB,uBAAuB;EACnB,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;EACX,OAAO,EAAE,EAAE;;;AAEf,EAAE;EACE,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,UAAU;EAC3B,WAAW,EAAE,MAAM;EAEnB,WAAW,ECbJ,wBAAwB;EDc/B,SAAS,EAAE,GAAG;EACd,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,aAAa",
+"sources": ["../../../sass/blocks/body/first-page.scss","../../../sass/variables.scss"],
+"names": [],
+"file": "first-page.css"
+}
