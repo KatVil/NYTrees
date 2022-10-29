@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/KatVil/NYTrees/issues"
   },
-  "homepage": "https://github.com/KatVil/NYTrees#readme"
+  "homepage": "https://github.com/KatVil/NYTrees#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
