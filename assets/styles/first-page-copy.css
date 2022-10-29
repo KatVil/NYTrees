@@ -1,3 +1,17 @@
+button{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    margin-left: -17%;
+    margin-top: 10%;
+    list-style-type: none;
+    width: 30rem;
+    height: 8rem;
+    background-color: #c6d1da;
+    border-color: #23216e;
+    border-radius: 41%;
+    z-index: 200;
+}
 .wrapper{
     display: flex;
 }
@@ -42,19 +56,21 @@
         display: flex;
         z-index: 300;
         margin-top: 95%;
-        margin-left: -200%;
+        margin-left: 1%;
         font-size: 2.25rem;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-size: 3em; 
         border-radius: 3px / 100%;
-        color: #a8b8c5;
-        text-shadow: 3px 3px 3px #23216e;
+        color: forestgreen;
+        text-shadow: 3px 3px 3px darkred;
         box-shadow: #23216e;
         z-index:200;}
     
     .first-page__button_wrapper{
     display: flex;
+    margin-top: 15%;
+    margin-left: -30%;
     z-index: 200;
     }
     .first-page__why-we{
@@ -69,7 +85,8 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin-left: -30%;
+        margin-left: -17%;
+        margin-top: 5%;
     }
 
     .first-page__why-to-choose-us{
@@ -78,18 +95,21 @@
     font-size: 3em;
     border-radius: 3px / 100%;
     color: #a8b8c5;
-    text-shadow: 3px 3px 3px #23216e;
+    text-shadow: 4px 4px 4px #23216e;
     box-shadow: #23216e;
     z-index: 200;
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
-    margin-left: -8%;
+    margin-top: 25%;
+    margin-left: -12%;
 }
-    
+    button:hover{
+        background-color: #7d0101;
+        cursor: pointer;
+    }
    a.first-page__button:hover {
         transition: .5s linear;
-        color: blue;
+        color: green;
         cursor: pointer;
         background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
       }
