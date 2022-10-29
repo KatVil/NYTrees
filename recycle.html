@@ -9,12 +9,194 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2305/2305655.png">
     <title>Document</title>
 </head>
 
 <body>
+    <header class="header">
+        <img class="img-logo" src="./assets/images/logo.svg" alt="logo" width="70px" height="70px">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
 
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="gallery.html">КУПИ</a></li>
+                    <li><a href="recycle.html">ОТДАЙ</a></li>
+                    <li><a href="contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <nav class="menu">
+
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">О НАС</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="gallery.html">КУПИ</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="recycle.html">ОТДАЙ</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="contacts.html">КОНТАКТЫ</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="form-container">
+        <h2 class="form-container__heading form-container__heading_recycle">Оставить заявку на переработку</h2>
+        <p class="form-container__text">Сдавая елку на переработку вы помагаете поддерживать различные волонтерские
+            инициативы</p>
+        <form action="#" class="form">
+            <div class="form-container__control">
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете дерево, которое хотите сдать:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="xmasTree">
+                                <input class="control__radio" type="radio" id="xmasTree" checked>
+                                <span class="control__label">Ель</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="pine">
+                                <input class="control__radio" id="pine" type="radio">
+                                <span class="control__label">Сосна</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="fir">
+                                <input class="control__radio" id="fir" type="radio">
+                                <span class="control__label">Пихта</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете высоту дерева:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="small">
+                                <input class="control__radio" type="radio" id="small" checked>
+                                <span class="control__label">Менее 1м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="medium">
+                                <input class="control__radio" id="medium" type="radio">
+                                <span class="control__label">От 1м до 1,5м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="mediumLarge">
+                                <input class="control__radio" id="mediumLarge" type="radio">
+                                <span class="control__label">От 1,5 до 2м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="large">
+                                <input class="control__radio" id="large" type="radio">
+                                <span class="control__label">Более 2м</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете, в какую организацию мы перечислим деньги:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="xmasTree">
+                                <input class="control__radio" type="checkbox" id="xmasTree" checked>
+                                <span class="control__label">Ночлежка</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="pine">
+                                <input class="control__radio" id="pine" type="checkbox">
+                                <span class="control__label">Дом с маяком</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="fir">
+                                <input class="control__radio" id="fir" type="checkbox">
+                                <span class="control__label">Подари жизнь</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <fieldset class="form__filter-group form__filter-group_contact">
+                <legend class="form__title">Введите свои данные:</legend>
+                <label for="formName" class="form__contact-label" id="addName">Имя</label>
+                <input class="form__contact-input" type="text" id="formName" placeholder="Имя"
+                    onfocus="this.placeholder = ''" required>
+                <label for="formMail" class="form__contact-label" id="addMail">Email</label>
+                <input class="form__contact-input" type="text" id="formName" placeholder="Имя"
+                    onfocus="this.placeholder = ''" required>
+                <label for="formMail" class="form__contact-label" id="addAddress">Адрес</label>
+                <input class="form__contact-input" type="address" id="formAddress" placeholder="Адрес"
+                    onfocus="this.placeholder = ''" required>
+                <label for="formMessage" class="form__contact-label" id="addMessage">Дополнительное
+                    сообщение</label>
+                <textarea class="form__contact-input form__contact-input_message" name="inputMessage" id="formMessage"
+                    cols="30" rows="15" placeholder="Сообщение" onfocus="this.placeholder = ''"></textarea>
+                <div class="button-container">
+                    <button class="button button-container__button">Отправить заявку!</button>
+
+                </div>
+            </fieldset>
+
+        </form>
+        <section class="form-container__heading"></section>
+        <footer class="footer">
+            <nav class="social">
+                <ul class="social__list">
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="#">
+                            <ion-icon name="logo-linkedin">
+                                <ion-icon>
+                        </a>
+                    </li>
+                    <li class="social__list-item">
+                        <a class="social__list-link" href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copiright">©2022</p>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>

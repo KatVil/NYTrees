@@ -1,11 +1,19 @@
 .form-container__heading {
     padding: 100px;
+    margin: 30px 0;
     color: $heading;
     font-weight: bold;
     font-size: 60px;
     text-align: center;
-    background-image: url("/NYTrees/assets/images/x-mas-tree.jpg");
+    background-color: green;
+    background-image: url('/NYTrees/assets/images/x-mas-lights.jpg');
 }
+
+.form-container__heading_recycle {
+        background-color: green;
+        background-repeat: no-repeat;
+        background-image: url('/NYTrees/assets/images/background-img2.jpg');
+    }
 
 @media screen and (max-width: $tablet-width) {
     .form-container__heading {
