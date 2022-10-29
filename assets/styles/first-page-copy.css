@@ -5,15 +5,19 @@ button{
     margin-left: -17%;
     margin-top: 10%;
     list-style-type: none;
-    width: 30rem;
-    height: 8rem;
+    width: 18rem;
+    height: 4rem;
     background-color: #c6d1da;
-    border-color: #23216e;
+    border-color: whitesmoke;
     border-radius: 41%;
     z-index: 200;
 }
 .wrapper{
     display: flex;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .first-page{
     display: flex;
@@ -21,84 +25,100 @@ button{
 .first-page__background_wrapper_mobile, .first-page__text_title-mobile{
     display: none;
 }
+.first-page{
+    background-image: url(../images/99px_ru_wallpaper_277786_novogodnie_vetochki_elki_s_dekorativnimi_snejinkami_mandarini_i.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: -9%;;
+    z-index: -100;}
+
 .first-page__background_wrapper {
         display: flex;
         justify-content: center;
         align-content: center;
-        background-image: url(../images/NYBackground.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100rem;
         height: 100rem;
-        z-index: -100;
+        z-index: 0;
     }
     
     .first-page__text_title {
         display: flex;
         align-items: flex-start;
-        margin-top: 25%;
+        justify-content: center;
+        margin-top: 4%;
+        margin-left:-2%;
+        margin-right:37%;
         font-family: "Montserrat", sans-serif;
-        font-size: 4em;
-        color: #7d0101;
-        text-shadow: 3px 3px 3px #05da68;
-        box-shadow: #23216e;
-        z-index: 200;
+        font-size: 3em;
+        color: #d56c2b;
+        text-shadow: 3px 3px 3px darkgreen;
+        box-shadow: #798c9b;
+        z-index: 300;
         line-height: 150%;
         /* border: 2px solid red; */
     }
     .first-page__button {
         display: flex;
         z-index: 300;
-        margin-bottom: 8%;
-        margin-left: 1%;
-        font-size: 2.25rem;
+        margin-bottom: 6%;
+        margin-left: 2%;
+        font-size: 2rem;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        font-size: 3em; 
+        font-size: 1.8em; 
+        font-weight:700;
+        text-align: center;
         border-radius: 3px / 100%;
         color: forestgreen;
-        text-shadow: 3px 3px 3px darkred;
-        box-shadow: #23216e;
-        z-index:200;}
+        text-shadow: 3px 3px 3px whitesmoke;
+        box-shadow: #23216e;}
     
     .first-page__button_wrapper{
     display: flex;
-    margin-top: 18%;
-    margin-left: -35%;
+    margin-top: 17%;
+    margin-left: -130%;
     z-index: 200;
     }
     .first-page__why-we{
         display: flex;
         font-family: "Montserrat", sans-serif;
-        font-size: 3.5em;
+        font-size: 2em;
         border-radius: 3px / 100%;
-        color: #a8b8c5;
-        text-shadow: 3px 3px 3px #23216e;
+        color: whitesmoke;
+        text-shadow: 3px 3px 3px #798c9b;
         box-shadow: #23216e;
         z-index: 200;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin-left: -25%;
-        margin-top: 5%;
+        margin-left: 33%;
+        margin-top:-130%;
     }
 
     .first-page__why-to-choose-us{
     list-style-type: none;
     font-family: "Montserrat", sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     border-radius: 3px / 100%;
-    color: #a8b8c5;
-    text-shadow: 4px 4px 4px #23216e;
+    color: whitesmoke;
+    text-shadow: 4px 4px 4px #798c9b;
     box-shadow: #23216e;
     z-index: 200;
     display: flex;
     flex-direction: column;
-    margin-top: 31%;
-    margin-left: -15%;
+    margin-top: 5%;
+    margin-right: 0%;
+    margin-left: 5%;
 }
     button:hover{
-        background-color: #7d0101;
+        background-color: #d56c2b;
         cursor: pointer;
     }
     a.first-page__button:hover {
