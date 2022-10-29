@@ -124,5 +124,8 @@ body {
   background-color: #E5E5E5;
   cursor: pointer;
 }
+.button-container__button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+}
 
 /*# sourceMappingURL=main.css.map */

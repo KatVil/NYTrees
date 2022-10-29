@@ -4,4 +4,8 @@
     font-family: $top-font;
     background-color: #E5E5E5;
     cursor: pointer;
+
+    &:hover {
+        background-color: $heading;
+    }
 }

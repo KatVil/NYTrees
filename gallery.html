@@ -13,13 +13,147 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2305/2305655.png">
 
     <title>Document</title>
 </head>
 
 <body>
+    <header class="header">
+        <img class="img-logo" src="./assets/images/logo.svg" alt="logo" width="70px" height="70px">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
 
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">КУПИ</a></li>
+                    <li><a href="#">ОТДАЙ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <nav class="menu">
+
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">О НАС</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">КУПИ</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">ОТДАЙ</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="#">КОНТАКТЫ</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="gallery">
+        <div class="card">
+            <img src="./assets/images/elka1.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Датская пихта</h3>
+                <p class="card-block__text">Датская пихта, или пихта Нордмана, — самое пушистое и объёмное дерево
+                    среди всех остальных. Она поражает своей мягкой и красивой хвоей.</p>
+                <p class="card-block__price">5 990р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/elka2.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Пихта Фразера</h3>
+                <p class="card-block__text">Пихта Фразера — тоже датская пихта, но, в отличие от пихты Нордмана, её
+                    стригли по мере роста — поэтому это дерево имеет идеальную коническую форму.</p>
+                <p class="card-block__price">6 590р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/elka3.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Русская сосна</h3>
+                <p class="card-block__text">Сосна может стать отличной альтернативой русской ёлке. Она не так сильно
+                    пахнет, меньше сыпется, при этом цвет её иголок — нежно-зеленый — впечатляет. </p>
+                <p class="card-block__price">2 290р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/elka4.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Русская ель</h3>
+                <p class="card-block__text">Русская ель — дерево из нашего детства! Она имеет сильный хвойный запах,
+                    короткие иголки и форму пирамиды. Такое дерево украсит каждый дом. </p>
+                <p class="card-block__price">2 190р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/elka1.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Датская пихта</h3>
+                <p class="card-block__text">Датская пихта, или пихта Нордмана, — самое пушистое и объёмное дерево
+                    среди всех остальных. Она поражает своей мягкой и красивой хвоей.</p>
+                <p class="card-block__price">5 990р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/elka2.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Пихта Фразера</h3>
+                <p class="card-block__text">Пихта Фразера — тоже датская пихта, но, в отличие от пихты Нордмана, её
+                    стригли по мере роста — поэтому это дерево имеет идеальную коническую форму.</p>
+                <p class="card-block__price">6 590р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/elka3.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Русская сосна</h3>
+                <p class="card-block__text">Сосна может стать отличной альтернативой русской ёлке. Она не так сильно
+                    пахнет, меньше сыпется, при этом цвет её иголок — нежно-зеленый — впечатляет. </p>
+                <p class="card-block__price">2 290р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./assets/images/elka4.jpg" alt="Ёлка" class="card-img" />
+            <div class="card-block">
+                <h3 class="card-block__title">Русская ель</h3>
+                <p class="card-block__text">Русская ель — дерево из нашего детства! Она имеет сильный хвойный запах,
+                    короткие иголки и форму пирамиды. Такое дерево украсит каждый дом. </p>
+                <p class="card-block__price">2 190р.</p>
+                <button class="button card-block__button">Купить</button>
+            </div>
+        </div>
+    </section>
     <section class="form-container">
         <h2 class="form-container__heading">Оставить заявку</h2>
         <p class="form-container__text">Укажите параметры новогоднего дерева и мы свяжемся с Вами </p>
@@ -126,96 +260,39 @@
 
         </form>
     </section>
-    <section class="gallery">
-        <div class="card">
-            <img src="./assets/images/elka1.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Датская пихта</h3>
-                <p class="card-block__text">Датская пихта, или пихта Нордмана, — самое пушистое и объёмное дерево
-                    среди всех остальных. Она поражает своей мягкой и красивой хвоей.</p>
-                <p class="card-block__price">5 990р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
+    <section class="form-container__heading"></section>
+    <footer class="footer">
+        <nav class="social">
+            <ul class="social__list">
+                <li class="social__list-item">
+                    <a class="social__list-link" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="social__list-item">
+                    <a class="social__list-link" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li class="social__list-item">
+                    <a class="social__list-link" href="#">
+                        <ion-icon name="logo-linkedin">
+                            <ion-icon>
+                    </a>
+                </li>
+                <li class="social__list-item">
+                    <a class="social__list-link" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="copiright">©2022</p>
         </div>
-
-        <div class="card">
-            <img src="./assets/images/elka2.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Пихта Фразера</h3>
-                <p class="card-block__text">Пихта Фразера — тоже датская пихта, но, в отличие от пихты Нордмана, её
-                    стригли по мере роста — поэтому это дерево имеет идеальную коническую форму.</p>
-                <p class="card-block__price">6 590р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./assets/images/elka3.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Русская сосна</h3>
-                <p class="card-block__text">Сосна может стать отличной альтернативой русской ёлке. Она не так сильно
-                    пахнет, меньше сыпется, при этом цвет её иголок — нежно-зеленый — впечатляет. </p>
-                <p class="card-block__price">2 290р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./assets/images/elka4.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Русская ель</h3>
-                <p class="card-block__text">Русская ель — дерево из нашего детства! Она имеет сильный хвойный запах,
-                    короткие иголки и форму пирамиды. Такое дерево украсит каждый дом. </p>
-                <p class="card-block__price">2 190р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./assets/images/elka1.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Датская пихта</h3>
-                <p class="card-block__text">Датская пихта, или пихта Нордмана, — самое пушистое и объёмное дерево
-                    среди всех остальных. Она поражает своей мягкой и красивой хвоей.</p>
-                <p class="card-block__price">5 990р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./assets/images/elka2.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Пихта Фразера</h3>
-                <p class="card-block__text">Пихта Фразера — тоже датская пихта, но, в отличие от пихты Нордмана, её
-                    стригли по мере роста — поэтому это дерево имеет идеальную коническую форму.</p>
-                <p class="card-block__price">6 590р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./assets/images/elka3.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Русская сосна</h3>
-                <p class="card-block__text">Сосна может стать отличной альтернативой русской ёлке. Она не так сильно
-                    пахнет, меньше сыпется, при этом цвет её иголок — нежно-зеленый — впечатляет. </p>
-                <p class="card-block__price">2 290р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="./assets/images/elka4.jpg" alt="Ёлка" class="card-img" />
-            <div class="card-block">
-                <h3 class="card-block__title">Русская ель</h3>
-                <p class="card-block__text">Русская ель — дерево из нашего детства! Она имеет сильный хвойный запах,
-                    короткие иголки и форму пирамиды. Такое дерево украсит каждый дом. </p>
-                <p class="card-block__price">2 190р.</p>
-                <button class="button card-block__button">Купить</button>
-            </div>
-        </div>
-
-    </section>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
