@@ -1,5 +1,23 @@
+button{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+    margin-left: -17%;
+    margin-top: 10%;
+    list-style-type: none;
+    width: 30rem;
+    height: 8rem;
+    background-color: #c6d1da;
+    border-color: #23216e;
+    border-radius: 41%;
+    z-index: 200;
+}
 .wrapper{
     display: flex;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .first-page{
     display: flex;
@@ -7,16 +25,21 @@
 .first-page__background_wrapper_mobile, .first-page__text_title-mobile{
     display: none;
 }
-/* .first-page__background{
-   width:100%;
-    height:100%;
-    z-index: 10;}*/
+.first-page{
+    background-image: url(../images/99px_ru_wallpaper_277786_novogodnie_vetochki_elki_s_dekorativnimi_snejinkami_mandarini_i.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -100;}
 
     .first-page__background_wrapper {
         display: flex;
         justify-content: center;
         align-content: center;
-        background-image: url(../images/NYBackground.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100rem;
@@ -27,13 +50,13 @@
     .first-page__text_title {
         display: flex;
         align-items: flex-start;
-        margin-top: 25%;
+        margin-top: -20%;
         font-family: "Montserrat", sans-serif;
         font-size: 4em;
         color: #7d0101;
         text-shadow: 3px 3px 3px #05da68;
         box-shadow: #23216e;
-        z-index: 200;
+        z-index: 10000;
         line-height: 150%;
         /* border: 2px solid red; */
     }
@@ -41,26 +64,28 @@
     .first-page__button {
         display: flex;
         z-index: 300;
-        margin-top: 95%;
-        margin-left: -200%;
+        margin-bottom: 8%;
+        margin-left: 1%;
         font-size: 2.25rem;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-size: 3em; 
         border-radius: 3px / 100%;
-        color: #a8b8c5;
-        text-shadow: 3px 3px 3px #23216e;
+        color: forestgreen;
+        text-shadow: 3px 3px 3px darkred;
         box-shadow: #23216e;
         z-index:200;}
     
     .first-page__button_wrapper{
     display: flex;
+    margin-top: 18%;
+    margin-left: -35%;
     z-index: 200;
     }
     .first-page__why-we{
         display: flex;
         font-family: "Montserrat", sans-serif;
-        font-size: 3em;
+        font-size: 3.5em;
         border-radius: 3px / 100%;
         color: #a8b8c5;
         text-shadow: 3px 3px 3px #23216e;
@@ -69,7 +94,8 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        margin-left: -52%;
+        margin-left: -25%;
+        margin-top: 5%;
     }
 
     .first-page__why-to-choose-us{
@@ -78,18 +104,21 @@
     font-size: 3em;
     border-radius: 3px / 100%;
     color: #a8b8c5;
-    text-shadow: 3px 3px 3px #23216e;
+    text-shadow: 4px 4px 4px #23216e;
     box-shadow: #23216e;
     z-index: 200;
     display: flex;
     flex-direction: column;
-    margin-top: 26%;
+    margin-top: 31%;
     margin-left: -15%;
 }
-    
+    button:hover{
+        background-color: #7d0101;
+        cursor: pointer;
+    }
    a.first-page__button:hover {
         transition: .5s linear;
-        color: blue;
+        color: green;
         cursor: pointer;
         background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
       }

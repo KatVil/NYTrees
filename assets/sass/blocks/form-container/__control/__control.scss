@@ -1,0 +1,11 @@
+.form-container__control {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .form-container__control {
+        width: 100%;
+    }
+}

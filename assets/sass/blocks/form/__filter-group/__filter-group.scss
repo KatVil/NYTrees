@@ -1,0 +1,15 @@
+.form__filter-group {
+    border: none;
+
+    &_contact {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .form__filter-group_contact {
+        width: 90%;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "1",
+  "main": "script.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatVil/NYTrees.git"
+  },
+  "keywords": [
+    "NY"
+  ],
+  "author": "katvil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatVil/NYTrees/issues"
+  },
+  "homepage": "https://github.com/KatVil/NYTrees#readme"
+}

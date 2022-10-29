@@ -2,13 +2,43 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 2%;
+}
+
+.contact-block {
+    align-self: center;
+}
+
+.contact-block__title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.address__text {
+    margin-top: 5%;
 }
 
 .address__phone, .address__mail {
     text-decoration: none;
     color: black;
+    display: block;
+    margin-top: 5%;
 }
 
 .address__phone:hover, .address__mail:hover {
     color: rgb(68, 142, 55);
+}
+
+@media screen and (max-width: 767px) {
+    .contacts {
+        height: 61vh;
+    }
+
+    .map-block {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
 }
