@@ -11,12 +11,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./NYTrees/assets/styles/main.css">
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2305/2305655.png">
 
     <title>Document</title>
 </head>
 
 <body>
+
+    <section class="form-container">
+        <h2 class="form-container__heading">Оставить заявку</h2>
+        <p class="form-container__text">Укажите параметры новогоднего дерева и мы свяжемся с Вами </p>
+        <form action="#" class="form">
+            <div class="form-container__control">
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете дерево:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="xmasTree">
+                                <input class="control__radio" type="radio" id="xmasTree" checked>
+                                <span class="control__label">Ель</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="pine">
+                                <input class="control__radio" id="pine" type="radio">
+                                <span class="control__label">Сосна</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="fir">
+                                <input class="control__radio" id="fir" type="radio">
+                                <span class="control__label">Пихта</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Выберете высоту дерева:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="small">
+                                <input class="control__radio" type="radio" id="small" checked>
+                                <span class="control__label">Менее 1м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="medium">
+                                <input class="control__radio" id="medium" type="radio">
+                                <span class="control__label">От 1м до 1,5м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="mediumLarge">
+                                <input class="control__radio" id="mediumLarge" type="radio">
+                                <span class="control__label">От 1,5 до 2м</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="large">
+                                <input class="control__radio" id="large" type="radio">
+                                <span class="control__label">Более 2м</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__filter-group">
+                    <legend class="form__title">Дополнительно:</legend>
+                    <ul class="form__list">
+                        <li class="form__item">
+                            <label class="control" for="xmasTree">
+                                <input class="control__radio" type="checkbox" id="xmasTree" checked>
+                                <span class="control__label">Подставка деревянная</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="pine">
+                                <input class="control__radio" id="pine" type="checkbox">
+                                <span class="control__label">Подставка пластмассавая</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="fir">
+                                <input class="control__radio" id="fir" type="checkbox">
+                                <span class="control__label">Гирлянда/белый свет</span>
+                            </label>
+                        </li>
+                        <li class="form__item">
+                            <label class="control" for="fir">
+                                <input class="control__radio" id="fir" type="checkbox">
+                                <span class="control__label">Гирлянда/желтый свет</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <fieldset class="form__filter-group form__filter-group_contact">
+                <legend class="form__title">Введите свои данные:</legend>
+                <label for="formName" class="form__contact-label" id="addName">Имя</label>
+                <input onmousedown="changeName()" class="form__contact-input" type="text" id="formName"
+                    placeholder="Имя" onfocus="this.placeholder = ''" required>
+                <label for="formMail" class="form__contact-label" id="addMail">Email</label>
+                <input onmousedown="changeMail()" class="form__contact-input" type="email" id="formMail"
+                    placeholder="Email" onfocus="this.placeholder = ''" required>
+                <label for="formMessage" class="form__contact-label" id="addMessage">Дополнительное
+                    сообщение</label>
+                <textarea onmousedown="changeMessage()" class="form__contact-input form__contact-input_message"
+                    name="inputMessage" id="formMessage" cols="30" rows="15" placeholder="Сообщение"
+                    onfocus="this.placeholder = ''"></textarea>
+                <div class="button-container">
+                    <button class="button button-container__button">Отаравить заявку!</button>
+                </div>
+            </fieldset>
+
+        </form>
 
     <section class="gallery">
         <div class="card">

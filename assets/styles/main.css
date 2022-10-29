@@ -2,4 +2,111 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.form__filter-group {
+  border: none;
+}
+.form__filter-group_contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .form__filter-group_contact {
+    width: 90%;
+  }
+}
+.form__item {
+  margin: 10px 0;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__title {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.form__contact-input {
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid hsl(0deg, 0%, 0%);
+}
+.form__contact-input:focus {
+  outline: none;
+}
+.form__contact-input_message {
+  border: 1px solid hsl(0deg, 0%, 0%);
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+}
+.control__label {
+  margin-right: 20px;
+}
+
+.control__radio {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .control__radio {
+    margin-right: 5px;
+  }
+}
+.form-container__heading {
+  padding: 100px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  background-image: url("/NYTrees/assets/images/x-mas-tree.jpg");
+}
+
+@media screen and (max-width: 768px) {
+  .form-container__heading {
+    padding: 80px 20px;
+    font-size: 50px;
+  }
+}
+.form-container__text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container__text {
+    text-align: center;
+  }
+}
+.form-container__control {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container__control {
+    width: 100%;
+  }
+}
+.form-container {
+  display: block;
+  margin: 50px auto;
+  max-width: 80%;
+}
+
 /*# sourceMappingURL=main.css.map */

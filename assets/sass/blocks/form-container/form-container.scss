@@ -1,0 +1,9 @@
+@import "./__heading/_heading";
+@import "./__text/_text";
+@import "./__control/_control";
+
+.form-container {
+    display: block;
+    margin: 50px auto;
+    max-width: 80%;
+}
