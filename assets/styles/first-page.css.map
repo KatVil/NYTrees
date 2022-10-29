@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,QAAQ;EACJ,OAAO,EAAE,IAAI;;;AAEjB,WAAW;EACP,OAAO,EAAE,IAAI;;;AAEjB,uBAAuB;EACnB,OAAO,EAAE,IAAI",
+"sources": ["../sass/blocks/first-page.scss"],
+"names": [],
+"file": "first-page.css"
+}
