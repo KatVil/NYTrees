@@ -141,7 +141,7 @@ body {
 .img-logo {
   width: 100px;
   height: 70px;
-  margin-left: 150px;
+  margin-left: 5%;
 }
 
 .header {
@@ -166,7 +166,7 @@ body {
   width: 171px;
   text-decoration: none;
   font-size: 17px;
-  color: white;
+  color: black;
   height: 55px;
   padding-top: 25px;
   -webkit-transition: 0.5s;
@@ -221,7 +221,7 @@ body {
   padding: 12px 0;
 }
 .nav li a {
-  color: white;
+  color: black;
   font-size: 20px;
   text-decoration: none;
 }
@@ -280,6 +280,11 @@ body {
     display: none;
   }
 }
+@media screen and (min-width: 769px) {
+  #menu {
+    display: none;
+  }
+}
 .footer {
   position: absolute;
   width: 100%;
@@ -323,7 +328,7 @@ body {
 
 .social__list-link {
   font-size: 2em;
-  color: #fff;
+  color: black;
   margin: 0 10px;
   display: inline-block;
   -webkit-transition: 0.5s;
@@ -331,7 +336,7 @@ body {
 }
 
 .copiright {
-  color: #fff;
+  color: black;
   text-align: center;
   margin-top: 15px;
   font-size: 1.1em;
