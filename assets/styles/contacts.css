@@ -2,11 +2,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 2%;
+}
+
+.contact-block {
+    align-self: center;
+}
+
+.contact-block__title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.address__text {
+    margin-top: 5%;
 }
 
 .address__phone, .address__mail {
     text-decoration: none;
     color: black;
+    display: block;
+    margin-top: 5%;
 }
 
 .address__phone:hover, .address__mail:hover {
