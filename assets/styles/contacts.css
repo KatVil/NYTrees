@@ -1,0 +1,14 @@
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.address__phone, .address__mail {
+    text-decoration: none;
+    color: black;
+}
+
+.address__phone:hover, .address__mail:hover {
+    color: rgb(68, 142, 55);
+}
