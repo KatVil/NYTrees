@@ -1,0 +1,10 @@
+.form-container__text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .form-container__text {
+        text-align: center;
+    }
+}

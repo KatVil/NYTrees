@@ -1,0 +1,19 @@
+@import "./__filter-group/_filter-group";
+@import "./__item/_item";
+@import "./__list/_list";
+@import "./__title/_title";
+@import "./__contact-input/_contact-input";
+@import "./__contact-label/_contact-label";
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .form {
+        flex-direction: column;
+    }
+    
+}
