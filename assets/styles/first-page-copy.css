@@ -131,17 +131,35 @@ button{
         top: 1px;
     }
 @media screen and (max-width: 480px) {
+    button{
+        display: flex;
+        justify-content: flex-start;
+        align-items:flex-end;
+        margin-left: 0%;
+        margin-top: 90%;
+        list-style-type: none;
+        width: 10rem;
+        height: 3.5rem;
+        background-color: #c6d1da;
+        border-color: whitesmoke;
+        border-radius: 41%;
+        z-index: 300;
+        border: 2px solid red;
+    }
     .first-page__background_wrapper, .first-page__text_title{
         display: none;
     }
-    .first-page__background_wrapper_mobile{
+    .first-page{
         display: flex;
-        background-image: url(../images/NYBackgroundMobile.jpg);
+        background-image: url(../images/NYBackground.jpg);
         background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-        width: 100em;
-        height: 100em;
-        margin-left: 30%;
+        margin-bottom: 63%;
         z-index: -100;    
     }
 
@@ -149,12 +167,88 @@ button{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-left: -460%;
-        margin-top: 200%;
+        margin-left: -19%;
+        margin-bottom: 7%;
+        padding-right: 55%;
+        padding-left: 30%;
         display: flex;
         font-family: "Montserrat", sans-serif;
-        font-size: 2.3em;
-        color: rgb(85, 5, 17);
-        z-index: 100;
+        font-size: 1.5em;
+        color: #d56c2b;
+        text-shadow: 3px 3px 3px darkgreen;
+        box-shadow: #798c9b;
+        z-index: 300;
+        line-height: 150%;
+        z-index: 10;
     }
+    .first-page__button {
+        display: flex;
+        z-index: 300;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        font-size: 2rem;
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.3em; 
+        font-weight:700;
+        text-align: center;
+        border-radius: 3px / 100%;
+        color: darkgreen;
+        text-shadow: 3px 3px 3px whitesmoke;
+        box-shadow: #23216e;}
+    
+    .first-page__button_wrapper{
+    display: flex;
+    margin-top: 42%;
+    margin-left: -215%;
+    z-index: 200;
+    }
+    .first-page__why-we{
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5em;
+        border-radius: 3px / 100%;
+        color: darkgreen;
+        text-shadow: 3px 3px 3px #798c9b;
+        box-shadow: #23216e;
+        z-index: 200;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 10%;
+        margin-top:-50%;
+    }
+
+    .first-page__why-to-choose-us{
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    border-radius: 3px / 100%;
+    color: darkgreen;
+    text-shadow: 4px 4px 4px #798c9b;
+    box-shadow: #23216e;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-right: 0%;
+    margin-left: 5%;
+}
+    button:hover{
+        background-color: #d56c2b;
+        cursor: pointer;
+    }
+    a.first-page__button:hover {
+        transition: .5s linear;
+        color: green;
+        cursor: pointer;
+        background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    }
+    a.first-page__button:active {
+        top: 1px;
+    }
+
+    @media screen and (max-width: 768px) {
+  
+      }
 }
