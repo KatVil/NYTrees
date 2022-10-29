@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +17,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!--    favicon-->
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2305/2305655.png">
     <title>NY trees recycle</title>
 </head>
+
 <body>
+    <header class="header">
+        <img class="img-logo" src="./assets/images/logo.svg" alt="logo" width="70px" height="70px">
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="/first-page.html">О НАС</a></li>
+                    <li><a href="/gallery.html">КУПИ</a></li>
+                    <li><a href="/recycle.html">ОТДАЙ</a></li>
+                    <li><a href="/contacts.html">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+
+        <nav class="menu">
+
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="/first-page.html">О НАС</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="/gallery.html">КУПИ</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="/recycle.html">ОТДАЙ</a>
+                </li>
+            </ul>
+            <ul class="menu__list">
+                <li class="menu__list-item">
+                    <a class="menu__list-link" href="/contacts.html">КОНТАКТЫ</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
     <div class="wrapper">
         <header class="header">
             <img class="img-logo" src="./assets/images/logo.svg" alt="logo" width="70px" height="70px">
@@ -71,7 +119,7 @@
         <main>
             <section class="first-page">
                 <div class="first-page__background_wrapper">
-                        <h1 class="first-page__text_title">A Christmas tree for your party</h1>
+                    <h1 class="first-page__text_title">A Christmas tree for your party</h1>
                 </div>
                 <div class="first-page__background_wrapper_mobile">
                     <h1 class="first-page__text_title-mobile">A Christmas tree for your party</h1>
@@ -82,14 +130,14 @@
                 <div class="first-page__button_wrapper">
                     <a class="first-page__button" href="#">Swipe to the Trees Gallery</a>
                 </div>
-                <h2 class="first-page__why-we">Our advantages:</h2>            
+                <h2 class="first-page__why-we">Our advantages:</h2>
                 <ul class="first-page__why-to-choose-us">
                     <li>🎄 We care about ecology</li>
                     <li>🎄 Christmas trees recycling</li>
                     <li>🎄 High quality</li>
                     <li>🎄 No-waste production</li>
 
-                </ul>                                  
+                </ul>
             </section>
         </main>
         <footer class="footer">
@@ -118,9 +166,13 @@
                     </li>
                 </ul>
             </nav>
-            <p class="copiright">&copy;2022</p>
-            </div>
-        </footer>
-        </div>
+            <p class="copiright">©2022</p>
+    </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    </div>
 </body>
+
 </html>
