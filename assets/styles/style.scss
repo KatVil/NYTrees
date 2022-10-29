@@ -1,4 +1,5 @@
-$top-font: "Montserrat", sans-serif;
+@import "./../sass/main.scss";
+@import "./../sass/variables.scss";
 * {
   margin: 0;
   padding: 0;
