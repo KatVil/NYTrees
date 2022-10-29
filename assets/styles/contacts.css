@@ -28,3 +28,17 @@
 .address__phone:hover, .address__mail:hover {
     color: rgb(68, 142, 55);
 }
+
+@media screen and (max-width: 767px) {
+    .contacts {
+        height: 61vh;
+    }
+
+    .map-block {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
